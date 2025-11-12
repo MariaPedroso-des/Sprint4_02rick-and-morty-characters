@@ -73,9 +73,25 @@ table {
 }
 
 ul {  
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 100px;
   list-style: none;
 }
 
+li {
+  padding: 16px;
+  background-color: azure;
+}
 
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
 
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
