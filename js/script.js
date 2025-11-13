@@ -4,10 +4,10 @@ const prevPage = document.getElementById('prev-page');
 let currentPage = 1;
 
 function getPersonajes (page) {
-  fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+  fetch(`https://rickandmortyapi.com/api/character/?page=${currentPage}`)
     .then((response) => {
       if (!response.ok) {
-        throw new Error('Mensaje de error');
+        throw new Error(`Error en la petición: ${response.status}`) // errores que no son de red. Comprobaciones para nosotros
       }
       return response.json();
     })
